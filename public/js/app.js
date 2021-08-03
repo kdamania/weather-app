@@ -13,7 +13,10 @@ weatherForm.addEventListener("submit",(e)=>{
     e.preventDefault()
     const location = search.value
     messageOne.textContent = 'Loading screen'
+    messageTwo.textContent = ''
+    messageThree.textContent = ''
     messageFour.textContent = ''
+    
 
     fetch('/weatherpage?address=' + location).then((response)=>{
         response.json().then((data)=>{
