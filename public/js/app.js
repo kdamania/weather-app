@@ -23,8 +23,8 @@ weatherForm.addEventListener("submit",(e)=>{
             } else{
                 messageOne.textContent = data.place
                 messageTwo.textContent = "Current Temperature is " + data.forecast.currentTemperature + " Degrees C. It feels like " + data.forecast.feelsLike + " Degrees C."
-                // messageThree.textContent = "The humidity is: " + data.forecast.humidity + "%"
-                // messageFour.textContent = "Chance of Precipitation: "+ data.forecast.precipitation +"%" 
+                messageThree.textContent = "The humidity is: " + data.forecast.humidity + "%"
+                messageFour.textContent = "Chance of Precipitation: "+ data.forecast.precipitation +"%" 
                 // console.log(data)
             }
         })
